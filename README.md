@@ -1,8 +1,9 @@
 This is not an official Google product.
 
 # PS3ControllerAutoSleep
-Disconnects PS3 Bluetooth controller when Mac OS runs screen saver.
-Fixes a known problem: Mac OS can not sleep when PS3 Controller is connected via bluetooth.
+Disconnects PS3 Bluetooth controller when MacOS runs the screensaver.
+
+This fixes a known problem: MacOS cannot sleep when a PS3 Controller is connected via bluetooth.
 
 Known to work on English Mac OS X Mavericks and Yosemite.
 
@@ -16,7 +17,7 @@ Known to work on English Mac OS X Mavericks and Yosemite.
 1. Verify that Bluetooth is shown in menu bar
 1. Don't forget to restart, or at least log out once
 
-## Known issue
+## Known Issue
 I have not found a way to save an app as an editable file and make it stay open.
 I've created a wrapper app, which continues its execution:
 
