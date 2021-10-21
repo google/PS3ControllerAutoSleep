@@ -31,14 +31,14 @@ if idleTime > 8 * 60 and idleTime < 10 * 60 then -- only do something if idle fo
 				log "count number of controllers connected"
 				set controllersCount to my CountControllerMenuItems()
 
-				log "in case there are no controllers, nothing to do"
+				log "in case there are no controllers, there is nothing to do"
 				if controllersCount is 0 then return
 
 				log "ask for user confirmation first"
-				set gaveUp to gave up of (display dialog "Looks like computer was inactive for quite some time.
-I'm going to disconnect PlayStation controllers connected via bluetooth.
+				set gaveUp to gave up of (display dialog "Looks like the computer has been inactive for quite some time.
+I'm going to disconnect any PlayStation controllers connected via bluetooth.
 
-You have a 10 seconds timeout before I proceeed further." with title "Disconnect PlayStation controllers" buttons {"No, don't do it! I'm using them"} default button 1 giving up after 10)
+You have a 10 second timeout before I proceed further." with title "Disconnect PlayStation controllers" buttons {"No, not yet! I'm still using them"} default button 1 giving up after 10)
 				if gaveUp is not true then return
 
 				log "disconnect all the controllers one by one"
